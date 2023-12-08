@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.main {
+    background: url(bg.jpg);
+    height: 70vh;
+    position: relative;
+    display: flex;
+    background-position: center center;
+    background-size: max(1508px, 100vw);
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+.darker {
+    height: 70vh;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: radial-gradient(#00000038, black);
+}
+
+nav {
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    height: 57px;
+    align-items: center;
+    padding: 9px;
+}
+
+.logo {
+    height: 76px;
+    z-index: 1;
+}
+
+.signIn {
+    background-color: #e10505;
+    height: 24px;
+    width: 61px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.sel {
+    background-color: black;
+    border: none;
+    color: #fffffff5;
+}
+
+.select {
+    background-color: black;
+    border: 1px solid #80808091;
+    color: white;
+    padding: 3px;
+    display: inline;
+    border-radius: 4px;
+
+}
+
+.xa {
+    height: 9px;
+}
+
+.mainContant {
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 18px;
+    height: 49vh;
+    padding: 28px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 19px;
+    letter-spacing: 0.7px;
+}
+
+h4 {
+    font-weight: 100;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    padding: 9px;
+}
+
+.email {
+    background-color: #0000008a;
+    color: white;
+    height: 9px;
+    width: 271px;
+    border: 1px solid #80808085;
+    padding: 17px;
+    border-radius: 3px;
+
+}
+
+::placeholder {
+    color: #b7adad;
+}
+
+.getStarted {
+    background-color: #e10000;
+    color: #ffffffeb;
+    border: none;
+    padding: 10px 16px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 2px;
+    letter-spacing: 0.9px;
+}
+
+.inputSec {
+    text-align: start;
+}
+
+.language {
+    box-shadow: 132px -6px 245px 220px;
+    gap: 17px;
+    display: flex;
+    align-items: center;
+
+}
+
+.line {
+    background-color: #8080807a;
+    height: 3px;
+    width: 100vw;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 132px 0px;
+    text-align: center;
+}
+
+.title1 {
+    color: white;
+    padding: 40px;
+    z-index: 1;
+}
+
+.vid {
+    position: relative;
+    right: 287px;
+    box-shadow: 292px 28px 220px 105px #2a2a2a;
+    padding: 20px;
+    background-image: linear-gradient(89deg, black, #202020);
+}
+
+.lcd {
+    height: 322px;
+    position: absolute;
+
+}
+
+.vid1 {
+    height: 156px;
+    position: relative;
+    left: 287px;
+    top: 28px;
+}
+
+.h51 {
+    font-size: 19px;
+    font-weight: 100;
+    color: #dbdbdb;
+    padding: 8px 29px;
+}
+
+.h11 {
+    font-size: 41px;
+}
+
+.secLeft {
+    flex-flow: row-reverse;
+}
+
+.lastSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ques {
+    height: 80px;
+    display: flex;
+    background-color: #2e2e2e;
+    justify-content: space-between;
+    align-items: center;
+    width: max(301px, 56vw);
+    padding: 0px 27px;
+    font-size: 19px;
+}
+
+.plus {
+    font-size: 52px;
+    font-family: emoji;
+}
+
+.lastH1 {
+    font-weight: 900;
+    z-index: 1;
+    font-size: 30px;
+    padding: 23px 0px;
+}
+
+.footer {
+    color: #ffffff99;
+    display: grid;
+    grid-template-areas: "one o o o"
+        "grid1 grid2 grid3 grid4"
+        "t y y y";
+    gap: 5vw 9vw;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 59px;
+}
+
+.footh5 {
+    grid-area: one;
+    gap: 2px;
+}
+
+.grid1 {
+    grid-area: grid1;
+}
+
+.grid2 {
+    grid-area: grid2;
+}
+
+.grid3 {
+    grid-area: grid3;
+}
+
+.grid4 {
+    grid-area: grid4;
+}
+
+.lastTitle {
+    grid-area: t;
+    display: flex;
+    flex-direction: column;
+}
+
+.uLined {
+    padding: 8px 0px;
+    font-weight: 100;
+    text-decoration: underline;
+    font-size: 11px;
+}
+
+.nextInp {
+    text-align: center;
+    padding: 47px 0px;
+
+}
+
+.email2 {
+    margin-top: 14px;
+}
+
+.uLine {
+    font-weight: 100;
+    text-decoration: underline;
+    font-size: 13px;
+    letter-spacing: 1px;
+    position: relative;
+    right: 8.5vw;
+}
+
+.lastSelect {
+    margin-bottom: 16px;
+}
+
+.lastTit {
+    font-weight: 100;
+}
+
+.t1 {
+    padding: 0;
+    color: white;
+    z-index: 1;
+    padding-right: 157px;
+}
+
+.lcd1 {
+    height: 252px;
+    position: absolute;
+    left: 0px;
+    padding-left: 157px;
+}
+
+.v1 {
+    height: 141px;
+    position: relative;
+    left: 188px;
+    top: 14px;
+}
+
+.girlTitle {
+    padding-right: 42vw;
+}
+
+.girl {
+    top: -119px;
+}
+
+.kid {
+    top: -125px;
+    left: 340px;
+}
+
+.kidTit {
+    padding-left: 483px;
+}
+
+@media(max-width:710px) {
+    .secLeft {
+        flex-wrap: wrap;
+    }
+
+    .section {
+        flex-wrap: wrap;
+        padding: 13vh 0px;
+    }
+
+    .k {
+        padding: 28vh 0px;
+    }
+
+    .g {
+        padding: 28vh 0px;
+    }
+
+    .t1 {
+        padding: 0;
+        color: white;
+        z-index: 1;
+        padding-right: 0px;
+    }
+
+    .lcd1 {
+        height: 252px;
+        position: absolute;
+        left: 259px;
+        padding-left: 0px;
+    }
+
+    .v1 {
+        height: 141px;
+        left: 295px;
+        top: 14px;
+    }
+
+    .girlTitle {
+        padding: 0;
+        margin-bottom: 235px;
+    }
+
+    .girl {
+        left: 185px;
+    }
+
+    .title1 {
+        margin-bottom: 87px;
+    }
+
+    .kid {
+        height: 238px;
+        position: absolute;
+        left: 160px;
+        top: -21px;
+        padding: 0;
+    }
+
+    .h51 {
+        margin-bottom: 40vh;
+    }
+
+    .kidTit {
+        padding: 0;
+    }
+}
+
+@media(max-width:570px) {
+    .footer {
+        padding: 65px 18px;
+    }
+
+    .lastSel {
+        font-size: 2vw;
+    }
+}
+
+@media(max-width:508px) {
+    .getStarted {
+        margin-top: 16px;
+    }
+
+    .darker {
+        height: 74vh;
+    }
+
+    .main {
+        height: 74vh;
+    }
+
+    .logo {
+        height: 53px;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .lastH1 {
+        text-align: center;
+    }
+
+    .v1 {
+        height: 97px;
+        left: 299px;
+        top: 50px;
+    }
+
+    .lcd1 {
+        height: 186px;
+        left: 265px;
+        top: 58px;
+    }
+}
+
+@media(max-width:384px) {
+    .main {
+        height: 95vh;
+    }
+
+    .mainContant {
+        height: 73vh;
+    }
+
+    .darker {
+        height: 95vh;
+    }
+
+    .language {
+        box-shadow: 132px -6px 245px 220px;
+        gap: 3px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: right;
+    }
+
+    .email {
+        width: 215px;
+    }
+
+    .select {
+        padding: 2px 0px;
+    }
+
+
+    .ques {
+        height: 77px;
+        width: max(204px, 56vw);
+    }
+
+    .footer {
+        gap: 0vw 0vw;
+    }
+
+    .uLine {
+        right: 0.5vw;
+    }
+
+    .lcd1 {
+        height: 158px;
+        left: 258px;
+        top: 58px;
+    }
+
+    .v1 {
+        height: 82px;
+        left: 284px;
+        top: 50px;
+    }
+
+    .h51 {
+        margin-bottom: 40vh;
+    }
+
+    .girlTitle {
+        padding: 0;
+    }
+
+    .girl {
+        left: 185px;
+    }
+
+    .kid {
+        height: 236px;
+        left: 159px;
+        bottom: 0px;
+    }
+}
+
+@media(max-width:750px) {
+    .footer {
+        grid-template-areas: "one o"
+            "grid1 grid2"
+            "grid3 grid4"
+            "t y";
+        justify-content: space-around;
+        gap: 20px 0px;
+    }
+
+    .uLine {
+        grid-area: one;
+        position: relative;
+        left: 110px;
+    }
+}
+
+@media(max-width:465px) {
+    .footer {
+        grid-template-areas: "one"
+            "grid1"
+            "grid2"
+            "grid3"
+            "grid4"
+            "t";
+        justify-content: start;
+        gap: 20px 0px;
+    }
+
+    .uLine {
+        grid-area: one;
+        position: relative;
+        left: 110px;
+    }
+
+    .select {
+        width: fit-content;
+    }
+
+    .lastSel {
+        font-size: 10px;
+    }
+}
